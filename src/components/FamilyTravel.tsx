@@ -27,7 +27,7 @@ export const FamilyTravel: React.FC = () => {
     { name: "Ertiga", cap: "6 Seater SUV", note: "Comfortable Family Group" },
     { name: "Innova Crysta", cap: "6/7 Seater Luxury", note: "Plush Captain Chairs" },
     { name: "Tempo Traveller", cap: "14/17/25 Seater", note: "Barat & Group Shuttle" },
-    { name: "Urbania", cap: "17 Seater Van", note: "VIP Luxury Transporter" },
+    { name: "Urbania — 17 Seater", cap: "17 Seater Van", note: "VIP Luxury Transporter" },
   ];
 
   return (

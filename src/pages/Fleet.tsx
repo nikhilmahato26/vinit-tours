@@ -14,10 +14,10 @@ export const FleetPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Our Fleet — Dzire, Ertiga, Innova Crysta, Urbania | Vinit Tours &amp; Travels</title>
+        <title>Our Fleet — Dzire, Ertiga, Innova Crysta, Urbania — 17 Seater | Vinit Tours &amp; Travels</title>
         <meta
           name="description"
-          content="Choose from our premium fleet: Maruti Dzire @ ₹12/KM*, Ertiga @ ₹14/KM*, Innova Crysta, Aura, Marazzo, Urbania &amp; Tempo Travellers in Ahmedabad."
+          content="Choose from our premium fleet: Maruti Dzire @ ₹12/KM*, Ertiga @ ₹14/KM*, Innova Crysta, Aura, Marazzo, Urbania — 17 Seater &amp; Tempo Travellers in Ahmedabad."
         />
       </Helmet>
 

@@ -9,11 +9,16 @@ import {
   Clock, 
   ShieldCheck, 
   ExternalLink,
-  Car
+  Car,
+  Building,
+  Bus,
+  CheckCircle2
 } from "lucide-react";
 import { businessContact, quickWhatsAppMessage } from "../data/navigation";
 
 export const Contact: React.FC = () => {
+  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Galaxy Mall, BRTS Bus Stop, 216/A, opp. jhansi ni rani, Satellite, Ahmedabad, Gujarat 380015")}`;
+
   return (
     <section id="contact" className="py-20 lg:py-28 bg-slate-50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -27,11 +32,11 @@ export const Contact: React.FC = () => {
             CONTACT VINIT TOURS &amp; TRAVELS
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-            Have questions about vehicle rates, airport timings, outstation packages, or group bookings? Reach our Ahmedabad team directly on call, WhatsApp, or email.
+            Have questions about vehicle rates, airport timings, outstation packages, or group bookings? Reach our Ahmedabad team directly on call, WhatsApp, or visit our office.
           </p>
         </div>
 
-        {/* 3 Large CTAs as requested */}
+        {/* 3 Large CTAs */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           {/* CALL NOW */}
           <a
@@ -81,7 +86,7 @@ export const Contact: React.FC = () => {
 
           {/* GET DIRECTIONS */}
           <a
-            href="https://www.google.com/maps/search/?api=1&query=Ahmedabad%2C+Gujarat"
+            href={googleMapsUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-between p-6 sm:p-8 rounded-3xl bg-white text-navy-900 hover:bg-slate-50 border border-slate-200 shadow-lg transition-all duration-300 group hover:-translate-y-1"
@@ -89,19 +94,114 @@ export const Contact: React.FC = () => {
           >
             <div>
               <span className="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-1">
-                Service Hub Location
+                Galaxy Mall, Satellite
               </span>
               <h3 className="text-2xl font-display font-extrabold text-navy-900 group-hover:text-navy-700 transition-colors">
                 GET DIRECTIONS
               </h3>
-              <p className="text-sm text-slate-600 font-semibold mt-1">
-                Ahmedabad, Gujarat, India
+              <p className="text-xs text-slate-600 font-semibold mt-1">
+                Opp. Jhansi Ni Rani BRTS, Ahmedabad
               </p>
             </div>
             <div className="w-14 h-14 rounded-2xl bg-slate-100 text-navy-900 group-hover:bg-navy-900 group-hover:text-gold-400 flex items-center justify-center transition-all">
               <Navigation className="w-7 h-7" />
             </div>
           </a>
+        </div>
+
+        {/* DEDICATED OFFICE ADDRESS SECTION WITH USER IMAGE */}
+        <div className="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-xl mb-16 overflow-hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            {/* Left: Real Office Photo */}
+            <div className="lg:col-span-5 relative group">
+              <div className="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 aspect-[4/5] max-h-[420px] w-full bg-slate-900">
+                <img
+                  src="/images/office/office-desk.jpg"
+                  alt="Vinit Tours & Travels Office Desk Ahmedabad"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-navy-950/20 to-transparent" />
+                
+                {/* Floating pill */}
+                <div className="absolute top-4 left-4">
+                  <span className="px-3 py-1 rounded-full bg-navy-950/90 text-gold-400 text-xs font-bold uppercase tracking-wider border border-navy-700 backdrop-blur-sm">
+                    Head Office &amp; Operations Desk
+                  </span>
+                </div>
+
+                <div className="absolute bottom-4 left-4 right-4 text-white">
+                  <p className="text-sm font-bold">Vinit Tours &amp; Travels Desk</p>
+                  <p className="text-xs text-slate-300">24×7 Cab Booking &amp; Fleet Dispatch Center</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right: Detailed Office Address & Landmarks */}
+            <div className="lg:col-span-7 space-y-6">
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-400/30 text-gold-700 text-xs font-bold uppercase tracking-wider mb-2">
+                  <Building className="w-3.5 h-3.5 text-gold-600" />
+                  <span>Physical Office Address</span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-display font-extrabold text-navy-900">
+                  Galaxy Mall Office, Ahmedabad
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-500 mt-1">
+                  Located in: <strong className="text-navy-900">Galaxy Mall office</strong>
+                </p>
+              </div>
+
+              {/* Exact Address Box from Image 2 */}
+              <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-rose-500 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <span className="text-xs font-bold text-slate-500 uppercase tracking-wider block">
+                      Full Postal Address:
+                    </span>
+                    <p className="text-base font-bold text-navy-900 leading-snug mt-1">
+                      Galaxy Mall, BRTS Bus Stop, 216/A, opp. jhansi ni rani, Satellite, Ahmedabad, Gujarat 380015
+                    </p>
+                  </div>
+                </div>
+
+                {/* Transit info from screenshot */}
+                <div className="pt-3 border-t border-slate-200/80 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                  <div className="flex items-center gap-2 text-slate-700 font-medium">
+                    <Bus className="w-4 h-4 text-gold-600 flex-shrink-0" />
+                    <span>Directly Opp. Jhansi Ni Rani BRTS Stop</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-slate-700 font-medium">
+                    <Navigation className="w-4 h-4 text-navy-800 flex-shrink-0" />
+                    <span>Ambawadi / IIM Road / Satellite Area</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Location Actions */}
+              <div className="flex flex-wrap items-center gap-4">
+                <a
+                  href={googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-navy-900 hover:bg-gold-500 text-white hover:text-navy-950 font-bold text-xs uppercase tracking-wider transition-all shadow-md"
+                  id="btn-office-google-maps"
+                >
+                  <Navigation className="w-4 h-4" />
+                  <span>Open in Google Maps</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+
+                <a
+                  href={`tel:${businessContact.primaryPhone}`}
+                  className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-navy-900 font-bold text-xs transition-colors"
+                >
+                  <Phone className="w-4 h-4 text-gold-500" />
+                  <span>Call Office Desk</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Contact Details & Official Contact Card */}
@@ -220,7 +320,7 @@ export const Contact: React.FC = () => {
             <div className="pt-4 border-t border-navy-800 text-[11px] text-slate-400 flex items-center justify-between">
               <span className="flex items-center gap-1.5">
                 <MapPin className="w-3.5 h-3.5 text-gold-400" />
-                Ahmedabad, Gujarat, India
+                Galaxy Mall, Satellite, Ahmedabad 380015
               </span>
               <span className="text-gold-400 font-semibold">24×7 Operating</span>
             </div>

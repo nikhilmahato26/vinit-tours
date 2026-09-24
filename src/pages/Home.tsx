@@ -23,7 +23,7 @@ export const Home: React.FC = () => {
         <title>Vinit Tours &amp; Travels — 24×7 Cab &amp; Travel Service | Ahmedabad, Gujarat</title>
         <meta
           name="description"
-          content="Comfortable Rides. Reliable Service. Hassle-Free Travel. Book Dzire starting @ ₹12/KM*, Ertiga @ ₹14/KM*, Innova Crysta, Urbania &amp; Tempo Travellers in Ahmedabad."
+          content="Comfortable Rides. Reliable Service. Hassle-Free Travel. Book Dzire starting @ ₹12/KM*, Ertiga @ ₹14/KM*, Innova Crysta, Urbania — 17 Seater &amp; Tempo Travellers in Ahmedabad."
         />
       </Helmet>
 

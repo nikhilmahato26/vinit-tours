@@ -7,6 +7,8 @@ export interface ContactInfo {
   state: string;
   country: string;
   fullAddress: string;
+  shortAddress?: string;
+  locatedIn?: string;
   tagline: string;
   workingHours: string;
 }
@@ -19,7 +21,9 @@ export const businessContact: ContactInfo = {
   city: "Ahmedabad",
   state: "Gujarat",
   country: "India",
-  fullAddress: "Ahmedabad, Gujarat",
+  fullAddress: "Galaxy Mall, BRTS Bus Stop, 216/A, opp. jhansi ni rani, Satellite, Ahmedabad, Gujarat 380015",
+  shortAddress: "Galaxy Mall, Satellite, Ahmedabad, Gujarat 380015",
+  locatedIn: "Galaxy Mall office",
   tagline: "Reliable Travel. Comfortable Journeys. Professional Service.",
   workingHours: "24×7 Available",
 };

@@ -405,7 +405,7 @@ Please confirm availability and share fare quote.`;
                   <option value="Tempo Traveller 14 Seater">Tempo Traveller — 14 Seater</option>
                   <option value="Tempo Traveller 17 Seater">Tempo Traveller — 17 Seater</option>
                   <option value="Tempo Traveller 25 Seater">Tempo Traveller — 25 Seater</option>
-                  <option value="Urbania">Urbania (Luxury 17 Seater)</option>
+                  <option value="Urbania — 17 Seater">Urbania — 17 Seater</option>
                 </select>
               </div>
             </div>

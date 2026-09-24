@@ -173,7 +173,7 @@ export const vehiclesData: Vehicle[] = [
   },
   {
     id: "urbania",
-    name: "Urbania",
+    name: "Urbania — 17 Seater",
     category: "Luxury Van",
     seats: "17 Seater",
     luggage: "Executive Luggage Bay",

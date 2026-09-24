@@ -44,7 +44,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "g6",
-    title: "Force Urbania Luxury Van",
+    title: "Force Urbania — 17 Seater",
     category: "Fleet",
     image: "/images/vehicles/urbania.jpg",
     caption: "17-seater European style luxury transporter for VIP delegations and executive groups.",
@@ -90,5 +90,12 @@ export const galleryItems: GalleryItem[] = [
     category: "Destinations",
     image: "/images/destinations/udaipur-rajasthan.jpg",
     caption: "Comfortable highway cab connection from Ahmedabad to Udaipur City of Lakes.",
+  },
+  {
+    id: "g13",
+    title: "Vinit Tours & Travels Booking Office",
+    category: "Airport & Corporate",
+    image: "/images/office/office-desk.jpg",
+    caption: "Our official booking & customer support office at Galaxy Mall, Satellite, Ahmedabad.",
   },
 ];

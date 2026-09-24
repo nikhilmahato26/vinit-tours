@@ -20,7 +20,7 @@ export const Fleet: React.FC = () => {
     { id: "all", label: "All Vehicles (9)" },
     { id: "sedan", label: "Sedans (Dzire, Aura)" },
     { id: "suv", label: "SUVs & MPVs (Ertiga, Crysta, Marazzo)" },
-    { id: "tempo", label: "Tempo Travellers & Urbania" },
+    { id: "tempo", label: "Tempo Travellers & Urbania — 17 Seater" },
   ];
 
   const filteredVehicles = vehiclesData.filter((v) => {
@@ -63,7 +63,7 @@ export const Fleet: React.FC = () => {
                   DZIRE starting @ <span className="text-gold-400">₹12 / KM*</span> &amp; ERTIGA @ <span className="text-gold-400">₹14 / KM*</span>
                 </h3>
                 <p className="text-xs text-slate-300 mt-1">
-                  For Innova Crysta, Aura, Marazzo, Tempo Travellers &amp; Urbania, fares are customized based on route &amp; duration.
+                  For Innova Crysta, Aura, Marazzo, Tempo Travellers &amp; Urbania — 17 Seater, fares are customized based on route &amp; duration.
                 </p>
               </div>
             </div>
