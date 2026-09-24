@@ -105,8 +105,12 @@ export const Navbar: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo / Brand Wordmark */}
           <Link to="/" className="flex items-center gap-3 group" id="brand-logo-link">
-            <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center shadow-md shadow-gold-500/20 group-hover:scale-105 transition-transform">
-              <Car className="w-6 h-6 text-navy-950 stroke-[2.2]" />
+            <div className="relative">
+              <img
+                src="/images/logo/vinit-logo.png"
+                alt="Vinit Tours & Travels Ahmedabad Official Logo"
+                className="w-11 h-11 sm:w-13 sm:h-13 rounded-full object-cover shadow-lg shadow-navy-950/40 border-2 border-gold-400/80 group-hover:scale-105 group-hover:border-gold-300 transition-all duration-300 bg-navy-950"
+              />
             </div>
             <div>
               <div className="flex items-center gap-1.5">

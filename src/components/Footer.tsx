@@ -23,9 +23,11 @@ export const Footer: React.FC = () => {
           {/* Brand Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gold-500 flex items-center justify-center text-navy-950 shadow-md">
-                <Car className="w-6 h-6 stroke-[2.2]" />
-              </div>
+              <img
+                src="/images/logo/vinit-logo.png"
+                alt="Vinit Tours & Travels Logo"
+                className="w-12 h-12 rounded-full object-cover shadow-md border-2 border-gold-400/60 bg-navy-900"
+              />
               <div>
                 <h3 className="text-xl font-display font-black tracking-tight text-white">
                   VINIT TOURS <span className="text-gold-400">&amp; TRAVELS</span>

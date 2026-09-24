@@ -213,9 +213,11 @@ export const Contact: React.FC = () => {
             
             <div className="flex items-center justify-between border-b border-navy-800 pb-6 mb-6">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-xl bg-gold-500 flex items-center justify-center text-navy-950 shadow-md">
-                  <Car className="w-7 h-7" />
-                </div>
+                <img
+                  src="/images/logo/vinit-logo.png"
+                  alt="Vinit Tours & Travels Logo"
+                  className="w-14 h-14 rounded-full object-cover shadow-md border-2 border-gold-400/70 bg-navy-900"
+                />
                 <div>
                   <h3 className="text-2xl font-display font-extrabold text-white">
                     Vinit Tours &amp; Travels
